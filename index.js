@@ -11,12 +11,10 @@ function wrapGifts(gifts){
 wrapGifts(gifts);
 
 
-function writeCards([name],eventName){
-    let names=[];
+function writeCards(name,eventName){
     let message=[];
-    names.push(name);
-    for(let n=1;n<names.length;n++){
-        message.push(`Thank you, ${name}, for the wonderful ${eventName} gift!`);
+    for(let n=0;n<name.length;n++){
+        message.push(`Thank you, ${name[n]}, for the wonderful ${eventName} gift!`);
     }
     return message;
 }
